@@ -1,5 +1,5 @@
-var msql = require("msql");
-var connection = msql.createConnection(
+var mysql = require("mysql");
+var connection = mysql.createConnection(
    {
     host : "127.0.0.1",
     user :"root",
@@ -10,4 +10,5 @@ var connection = msql.createConnection(
 );
 connection.connect((err)=> {
     console.log("[mysql error]", err);
-})
+});
+module.export =connection;
