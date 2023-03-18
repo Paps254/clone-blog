@@ -9,7 +9,7 @@ const app= express();
 var urlencodedParser = bodyParser.urlencoded({extended: false})
 
 app.set('view engine','ejs')
-
+app.use(urlencodedParser)
 app.get('/', (req,res)=>{
     res.render("home");
 });
@@ -21,7 +21,7 @@ app.post("/post-data", (req,res)=> {
     let postTitle = req.body.postTitle;
     let postBody = req.body.postBody;
 
-    connection.connect ((err)=>{
+    connection.connect((err)=>{
         connection.query(`insert into post(title,body) values("${postTitle}","${postBody}")`)
     });
     res.redirect("/")
