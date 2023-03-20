@@ -5,13 +5,13 @@
       <% if(posts){%>
         <% posts.forEach((post,id)=>{%>
         <div class="card-header">
-          <%= posts.title%>
+          <%= post.title%>
         </div>
         <div class="card-body">
           <blockquote class="blockquote mb-0">
-            <p class="mb-0"><%= posts.body%></p>
+            <p class="mb-0"><%= post.body%></p>
           </blockquote>"
-          <footer class="blockquote-footer"> <%= posts.created_on%><cite title="Source Title">Source Title</cite></footer>
+          <footer class="blockquote-footer"> <%= post.created_on%><cite title="Source Title">Source Title</cite></footer>
           <a href="#" class="btn btn-primary">save</a>
         </div>
       </div>

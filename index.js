@@ -25,7 +25,7 @@ app.get('/post', (req,res)=>{
     res.render("post");
 })
 
-app.post("/posts-data", (req,res)=> {
+app.post("/post-data", (req,res)=> {
     let postTitle = req.body.postTitle;
     let postBody = req.body.postBody;
 
