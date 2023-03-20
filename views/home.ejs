@@ -1,9 +1,9 @@
 
 <%- include("partials/header.ejs")%>
 <div class="container">
+  <% if(posts){%>
+    <% posts.forEach((post,id)=>{%>
     <div class="card">
-      <% if(posts){%>
-        <% posts.forEach((post,id)=>{%>
         <div class="card-header">
           <%= post.title%>
         </div>
