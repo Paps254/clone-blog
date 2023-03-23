@@ -1,7 +1,7 @@
-import path from "path"
+
 import express  from 'express';
-import bodyParser from "body-parser";
-import * as PostController from './controller/post_controller'
+import bodyParser from 'body-parser';
+import * as PostController from './controller/post_controller.js'
 
 
 var app= express();
