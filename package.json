@@ -15,6 +15,7 @@
     "express": "^4.18.2",
     "module_name": "^1.0.0",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.29.3"
   }
 }
