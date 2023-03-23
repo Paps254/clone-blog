@@ -1,5 +1,5 @@
 
-import { Post } from "./models/post.model.js";
+import { Post } from "./models/post_model.js";
 
 
 
